@@ -1,12 +1,34 @@
 <section id="topbar" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-none d-md-flex align-items-center">
+    <div class="container">
+        <!-- <div class="contact-info d-none d-md-flex align-items-center">
             <h4>JATIYA KABI KAZI NAZRUL ISLAM UNIVERSITY</h4>
-        </div>
-        <div class="social-login-links d-flex align-items-center">
+        </div> -->
+        <!-- <div class="social-login-links d-flex align-items-center">
             <a href="login.php" class="twitter"><i class="bi bi-person-fill-check"></i> Login</a>
             <a href="#" class="facebook"><i class="bi bi-envelope-fill"></i> Web Mail</a>
             <a href="contactus.php" class="instagram"><i class="bi bi-person-lines-fill"></i> Contact Us</a>
+        </div> -->
+
+        <div class="row align-items-center">
+            <div class="col-lg-2">
+                <div class="home-logo">
+                    <a href="index.php">
+                        <img src="assets/img/main-logo-white.png" class="img-fluid" loading="lazy" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="university-name">
+                    <h2> Jatiya Kabi Kazi Nazrul Islam University</h2>
+                    <!-- JATIYA KABI KAZI NAZRUL ISLAM UNIVERSITY -->
+                    <h3>জাতীয় কবি কাজী নজরুল ইসলাম বিশ্ববিদ্যালয়</h3>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="government-logo">
+                    <img src="assets/img/50-years-no-bg.png" class="img-fluid" alt="">
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -15,12 +37,19 @@
 <!-- ======= Header ======= -->
 <header id="header" class="d-flex align-items-center">
     <div class="container d-flex justify-content-between justify-content-lg-center">
-        <div class="moblie-logo">
-            <a href="index.php"><img src="assets/img/main-logo.png" alt="JATIYA KABI logo" loading="lazy" class="img-fluid" /></a>
-            <span> JATIYA KABI KAZI NAZRUL ISLAM UNIVERSITY </span>
+        <div class="only-mobile">
+            <div class="moblie-logo">
+                <a href="https://apps.piit.us/jkkniu"><img src="https://apps.piit.us/jkkniu/assets/img/main-logo.png" alt="JATIYA KABI logo" loading="lazy" class="img-fluid"></a>
+                <div>
+                    <span> JATIYA KABI KAZI NAZRUL ISLAM UNIVERSITY </span>
+                    <br>
+                    <span> জাতীয় কবি কাজী নজরুল ইসলাম বিশ্ববিদ্যালয় </span>
+                </div>
+            </div>
         </div>
         <nav id="navbar" class="navbar">
             <ul>
+                <li><a class="nav-link scrollto" href="index.php">Home</a></li>
                 <li class="dropdown">
                     <a href="#"><span>About</span><i class="bi bi-caret-down-fill"></i></a>
                     <ul class="animated fadeOutUp">
@@ -79,30 +108,19 @@
                     </ul>
                 </li>
 
-                <li class="dropdown megamenu">
-                    <a href="#"><span>Administration </span>
-                        <i class="bi bi-caret-down-fill"></i></a>
+                <li class="dropdown">
+                    <a href="#"><span>Administration</span><i class="bi bi-caret-down-fill"></i></a>
                     <ul class="animated fadeOutUp">
                         <li>
-                            <h6 class="menu-title">Administration</h6>
                             <a href="#">VC Secretariat</a>
+                        </li>
+                        <li>
                             <a href="#">Offices</a>
-                        </li>
-                        <li>
-                            <h6 class="menu-title">Admission</h6>
-                            <a href="#">UNDERGRADUATE </a>
-                            <a href="#">POST GRADUATE</a>
-                        </li>
-                        <li>
-                            <h6 class="menu-title">D-Filing</h6>
-                            <a href="#">Login </a>
-                            <a href="tuitionFee.php">Tuition Fee </a>
                         </li>
                     </ul>
                 </li>
-
                 <li class="dropdown">
-                    <a href="#"><span>Faculty</span><i class="bi bi-caret-down-fill"></i></a>
+                    <a href="#"><span>Facultys</span><i class="bi bi-caret-down-fill"></i></a>
                     <ul>
                         <li class="dropdown">
                             <a href="#"><span>FACULTY OF ARTS</span><i class="bi bi-chevron-right"></i></a>
@@ -130,45 +148,46 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="#"><span>Publication</span><i class="bi bi-caret-down-fill"></i></a>
+                    <a href="#"><span>Publications</span><i class="bi bi-caret-down-fill"></i></a>
                     <ul class="animated fadeOutUp">
                         <li>
-                            <a href="#">journal of Nazrul University</a>
+                            <a href="#">Book</a>
                         </li>
                         <li>
-                            <a href="#">Manobbidya</a>
+                            <a href="Journal.php">Journal</a>
                         </li>
                         <li>
-                            <a href="#">Journal of social Science</a>
+                            <a href="#">Department Publications</a>
                         </li>
                     </ul>
                 </li>
+
                 <li class="dropdown">
-                    <div class="pc-logo logo">
-                        <a href="index.php"><img src="assets/img/main-logo.png" alt="JATIYA KABI logo" loading="lazy" class="img-fluid" /></a>
-                    </div>
-                </li>
-                <li><a href="#">INSTITUTE/CENTER/CELL</a></li>
-                <li class="dropdown">
-                    <a href="#"><span>Notice</span><i class="bi bi-caret-down-fill"></i></a>
+                    <a href="#"><span>Notices</span><i class="bi bi-caret-down-fill"></i></a>
                     <ul class="animated fadeOutUp">
                         <li>
                             <a href="#">All</a>
                         </li>
                         <li>
-                            <a href="#">Circulars</a>
+                            <a href="#">Students</a>
                         </li>
                         <li>
-                            <a href="#">Procurements</a>
+                            <a href="#">Teachers</a>
                         </li>
                         <li>
                             <a href="#">Admission</a>
                         </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#"><span>Research </span><i class="bi bi-caret-down-fill"></i></a>
+                    <ul class="animated fadeOutUp">
                         <li>
-                            <a href="#">Careers</a>
+                            <a href="#">External Funded </a>
                         </li>
                         <li>
-                            <a href="#">NOC</a>
+                            <a href="#">University Funded</a>
                         </li>
                     </ul>
                 </li>
@@ -176,30 +195,62 @@
                     <a href="#"><span>Others </span><i class="bi bi-caret-down-fill"></i></a>
                     <ul class="animated fadeOutUp">
                         <li>
-                            <a href="#">Convocation </a>
+                            <a href="#">News </a>
                         </li>
                         <li>
                             <a href="#">Alumni</a>
                         </li>
                         <li>
-                            <a href="apa.php">APA</a>
-                        </li>
-                        <li>
-                            <a href="#">Online Payment System </a>
-                        </li>
-                        <li>
                             <a href="#">IQAC</a>
                         </li>
                         <li>
-                            <a href="#">Citizen Charter</a>
+                            <a href="tuitionFee.php">Tuition Fee</a>
+                        </li>
+                        <li>
+                            <a href="contactus.php">Contact us</a>
                         </li>
                     </ul>
                 </li>
-                <li><a href="Research/Research.php">Research </a></li>
-                <li><a href="#">News </a></li>
+                <li><a href="#">Citizen Charter</a></li>
+                <li><a href="apa.php">APA </a></li>
+                <li><a href="login.php">login </a></li>
             </ul>
 
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
     </div>
 </header>
+<!-- end Header -->
+
+<!-- ======= leastNotice ======= -->
+<section id="leastNotice" class="leastNotice">
+    <div class="">
+        <div class="row g-0">
+            <div class="col-lg-2">
+                <div class="notice-top">
+                    <h4>Update Notice</h4>
+                </div>
+            </div>
+            <div class="col-lg-10">
+                <div class="notice-top-content">
+                    <marquee behavior="scroll" direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+                        <span>
+                            <a href="noticeDetails.html"><i class="bi bi-pencil-square"></i> জাতির জনক বঙ্গবন্ধু
+                                শেখ মুজিবুর রহমানের ৪৮তম শাহাদাত বার্ষিকী ও জাতীয় শোক দিবস
+                                ২০২৩ উপলক্ষ্যে এ প্রতিষ্ঠান কর্তৃক আয়োজিত বিভিন্ন
+                                প্রতিযোগিতা প্রসঙ্গে।</a>
+                        </span>
+                        <a href="noticeDetails.html"><i class="bi bi-pencil-square"></i> আগামী ০৫.০৮.২০২৩,
+                            শনিবারের ৮ম ও ৯ম শ্রেণির অর্ধ-বার্ষিক ও ১০ম শ্রেণির প্রাক
+                            নির্বাচনি পরীক্ষার সময়সূচি পরিবর্তন প্রসঙ্গে।</a>
+                        <a href="noticeDetails.html"><i class="bi bi-pencil-square"></i> ২০২৩ সালে অনুষ্ঠিতব্য
+                            এইচএসসি পরীক্ষার ফরম পূরণ চূড়ান্তকরণের লক্ষ্যে
+                            পরীক্ষার্থীদের প্রতিষ্ঠানে উপস্থিত থাকা প্রসঙ্গে।</a>
+                        <a href="noticeDetails.html"><i class="bi bi-pencil-square"></i> Admission Announcement 10th Batch, 2023 Executive Masters of Public Administration (EMPA)</a>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end leastNotice -->

@@ -97,6 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   let selectHeader = select('#header');
   let selectImage = select('.logo');
+  let mobileLogo = select('.only-mobile');
 
   if (selectHeader) {
     let headerOffset = selectHeader.offsetTop;
@@ -105,11 +106,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (headerOffset - window.scrollY <= 0) {
         selectHeader.classList.add('fixed-top');
         nextElement.classList.add('scrolled-offset');
-        selectImage.classList.add('img-fixed-witdth');
+        mobileLogo.classList.remove('only-mobile');
       } else {
         selectHeader.classList.remove('fixed-top');
         nextElement.classList.remove('scrolled-offset');
-        selectImage.classList.remove('img-fixed-witdth');
+        mobileLogo.classList.add('only-mobile');
       }
     };
     window.addEventListener('load', headerFixed);

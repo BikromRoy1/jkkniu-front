@@ -26,7 +26,7 @@
                                             Collaboration</a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="ri-arrow-right-double-fill"></i>                                             Journal Access</a>
+                                        <a href="#"><i class="ri-arrow-right-double-fill"></i> Journal Access</a>
                                     </li>
                                     <li>
                                         <a href="#"><i class="ri-arrow-right-double-fill"></i> Ministry
@@ -60,7 +60,7 @@
                                 <h4>Important Links</h4>
                                 <ul>
                                     <li>
-                                        <a href="#"><i class="ri-arrow-right-double-fill"></i> A-Z
+                                        <a href="siteIndex.php"><i class="ri-arrow-right-double-fill"></i> A-Z
                                             Index</a>
                                     </li>
                                     <li>
@@ -80,6 +80,12 @@
                                     </li>
                                     <li>
                                         <a href="#"><i class="ri-arrow-right-double-fill"></i> Citizen Charter</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="ri-arrow-right-double-fill"></i> Web Mail</a>
+                                    </li>
+                                    <li>
+                                        <a href="SiteMap.php"><i class="ri-arrow-right-double-fill"></i> Site Map</a>
                                     </li>
 
                                 </ul>
@@ -136,8 +142,7 @@
 
 
 <!-- Scroll Top Button -->
-<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <!-- Preloader -->
 <div id="preloader">

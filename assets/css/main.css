@@ -35,6 +35,7 @@
   --color-inverse: #ffffff;
   --color-inverse-rgb: 255, 255, 255;
   --text-title-color: #002147;
+  --text-title-rgb: 0, 33, 71;
 }
 
 /* Nav Menu Colors */
@@ -136,9 +137,11 @@ section {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: var(--color-background-topbar);
+  /* background: var(--color-background-topbar); */
+  background: #0e8d59;
   padding: 10px 0;
   font-size: 14px;
+  /* height: 130px; */
 }
 
 #topbar .contact-info h4 {
@@ -159,6 +162,34 @@ section {
 
 #topbar .social-login-links a:hover {
   color: var(--text-title-color);
+}
+#topbar .home-logo {
+  text-align: center;
+}
+#topbar .home-logo img {
+  height: 100px;
+  margin: 0 auto;
+}
+#topbar .university-name {
+  text-align: center;
+}
+#topbar .university-name h2 {
+  text-transform: capitalize;
+  color: #fbfbfb;
+  /* text-shadow: 2px 2px 5px #000; */
+  text-shadow: 2px 3px 6px #000;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+#topbar .university-name h3 {
+  margin-top: 10px;
+  color: #fbfbfb;
+  text-shadow: 2px 3px 6px #000;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
 }
 
 /*--------------------------------------------------------------
@@ -222,7 +253,19 @@ section {
 }
 
 .moblie-logo a img {
-  height: 50px;
+  height: 48px;
+}
+.moblie-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.only-mobile {
+  display: none;
+}
+.moblie-logo span {
+  font-size: 11px;
+  font-weight: 600;
 }
 
 /*--------------------------------------------------------------
@@ -630,6 +673,7 @@ section {
   font-weight: 600;
   color: #fff;
   font-family: var(--font-secondary);
+  text-align: center;
 }
 .breadcrumbs ol {
   display: flex;
@@ -792,6 +836,55 @@ section {
   font-weight: 400;
   font-size: 15px;
 }
+/*--------------------------------------------------------------
+# Home Page
+--------------------------------------------------------------*/
+/* Least Notice - Home Page
+------------------------------*/
+.leastNotice {
+  padding: 0px 0px;
+}
+.leastNotice .notice-top {
+  display: inline-block;
+  position: relative;
+  background-color: #0e8d59;
+  height: 40px;
+  padding: 0 20px;
+  line-height: 40px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leastNotice .notice-top h4 {
+  color: var(--color-inverse);
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.leastNotice .notice-top-content {
+  display: inline-block;
+  position: relative;
+  background-color: #e3e3e3;
+  height: 40px;
+  padding-right: 20px;
+  line-height: 40px;
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  color: var(--text-title-color);
+}
+.leastNotice .notice-top-content a {
+  color: var(--text-title-color);
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 0;
+  padding-right: 15px;
+  font-family: var(--font-secondary);
+}
 
 /*--------------------------------------------------------------
 # Home Page
@@ -800,7 +893,7 @@ section {
 ------------------------------*/
 #hero {
   width: 100%;
-  height: 90vh;
+  height: 70vh;
   background-color: rgba(0, 0, 0, 0.8);
   overflow: hidden;
   position: relative;
@@ -833,7 +926,7 @@ section {
 }
 
 #hero .carousel-content {
-  background: rgba(4, 4, 4, 0.7);
+  background: rgba(4, 4, 4, 0.5);
   padding: 20px;
   color: #fff;
   border-bottom: 4px solid var(--color-primary);
@@ -916,7 +1009,8 @@ section {
 
 @media (min-width: 1024px) {
   #hero .carousel-content {
-    width: 60%;
+    /* width: 60%; */
+    width: 85%;
   }
 
   #hero .carousel-control-prev,
@@ -942,10 +1036,149 @@ section {
 
 @media (max-height: 500px) {
   #hero {
-    height: 120vh;
+    height: 100vh;
   }
 }
+/*--------------------------------------------------------------
+# left side notice
+--------------------------------------------------------------*/
+/* left side notice - Home Page
+------------------------------*/
+#home-hero .left-slide-notice {
+  padding-top: 0px;
+  margin-top: 0px;
+  width: 100%;
+  height: 70vh;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  overflow: hidden;
+  position: relative;
+  /* background: red; */
+}
+#home-hero .left-slide-notice .slide-notice {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+#home-hero .slide-notice-padding {
+  padding: 20px;
+}
 
+#home-hero .nav-pills {
+  border-bottom: 1px solid rgba(var(--text-title-rgb), 0.2);
+}
+#home-hero .nav-pills li + li {
+  margin-left: 25px;
+}
+#home-hero .nav-link {
+  background: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-title-color);
+  padding: 12px 0;
+  margin-bottom: -2px;
+  border-radius: 0;
+  font-family: var(--font-secondary);
+}
+#home-hero .nav-link.active {
+  color: var(--color-primary);
+  background: none;
+  border-bottom: 3px solid var(--color-primary);
+}
+@media (max-width: 575px) {
+  #home-hero .nav-link {
+    font-size: 16px;
+  }
+}
+#home-hero .home-hero-news {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+#home-hero .home-hero-news .home-news-date {
+  text-align: center;
+  min-width: 75px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: -3px;
+  background: var(--text-title-color);
+  height: 63px;
+  border-radius: 4px;
+  padding: 3px;
+  color: var(--color-inverse);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home-hero .home-hero-news .home-news-date h4 {
+  color: var(--color-primary);
+  font-weight: 700;
+  line-height: 1;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+#home-hero .home-hero-news .home-news-date span {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+#home-hero .home-hero-news .home-news-content h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-title-color);
+  margin-bottom: 0px;
+}
+#home-hero .home-hero-news .home-news-content h4 a {
+  color: var(--text-title-color);
+}
+#home-hero .home-news-btn {
+  background: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  text-align: end;
+  padding: 10px 20px;
+  border-top: 1px solid rgba(var(--text-title-rgb), 0.2);
+}
+#home-hero .home-news-btn a {
+  color: var(--text-title-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+#home-hero .home-news-btn a:hover {
+  color: var(--color-primary);
+}
+
+#home-hero .home-hero-notice {
+  display: flex;
+  align-items: stretch;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+#home-hero .home-hero-notice .home-notice-icons i {
+  font-size: 18px;
+  color: var(--color-primary);
+}
+#home-hero .home-hero-notice .home-notice-content h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-title-color);
+  margin-bottom: 0px;
+}
+#home-hero .home-hero-notice .home-notice-content h4 a {
+  color: var(--text-title-color);
+  transition: 0.3s all;
+}
+#home-hero .home-hero-notice .home-notice-content h4 a:hover {
+  color: var(--color-primary);
+}
 /* Message from the Vice Chancellor and Message from the Treasurer - Home Page
 ------------------------------*/
 /* //? Message from the Treasurer and message from Vice Chancellor */
@@ -1398,6 +1631,10 @@ section {
 
 .seminar-image {
   position: relative;
+}
+.seminar-image img {
+  height: 180px;
+  object-fit: cover;
 }
 
 .seminar-date {
@@ -2870,6 +3107,7 @@ section {
   color: var(--text-title-color);
   font-family: var(--font-primary);
   text-transform: uppercase;
+  padding-bottom: 13px;
 }
 /*! ********   Login Pages -   ********** */
 /*--------------------------------------------------------------
@@ -3244,7 +3482,7 @@ section {
 }
 .common-search-box #search-form {
   height: 40px;
-  background: #F6F7F9;
+  background: #f6f7f9;
   display: flex;
   align-items: center;
   border-radius: 5px;
@@ -3278,4 +3516,298 @@ section {
 .common-search-box #search-form .search-button:hover {
   background: #00a221;
   color: #fff;
+}
+
+/*! ********   Journal books -   ********** */
+/*--------------------------------------------------------------
+#  Journal books 
+--------------------------------------------------------------*/
+#journalsBooks .journalsBooks-items {
+  padding: 25px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  border-radius: 5px;
+}
+#journalsBooks .journalsBooks-items .journalsBooks-content h4 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-top: 6px;
+  color: var(--text-title-color);
+}
+#journalsBooks .journalsBooks-items .journalsBooks-content h4 a {
+  color: var(--text-title-color);
+}
+#journalsBooks .journalsBooks-items .journalsBooks-content h4 a:hover {
+  color: var(--color-primary);
+}
+#journalsBooks .journalsBooks-items .journalsBooks-date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#journalsBooks .journalsBooks-items .journalsBooks-date p {
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-weight: normal;
+}
+#journalsBooks .journalsBooks-items .journalsBooks-part {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: gray;
+}
+#journalsBooks .journalsBooks-items .journalsBooks-part span {
+  font-size: 14px;
+  font-weight: normal;
+}
+#journalsBooks .journalsBooks-border {
+  padding-bottom: 15px;
+  border-bottom: 1px dotted gray;
+}
+#journalsBooks .journalsBooks-items .journalsBooks-view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+#journalsBooks .journalsBooks-items .journalsBooks-view a {
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+#journalsBooks .journalsBooks-icons {
+  width: 30px;
+  height: 30px;
+  background: #00a22136;
+  color: var(--color-primary);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#journalsBooks .journalsBooks-icons i {
+  font-size: 17px;
+}
+/*! ********   Journal books Details -   ********** */
+/*--------------------------------------------------------------
+#  Journal books  Details
+--------------------------------------------------------------*/
+#journalsBooksDetails .journalsBooksDetails-tittle {
+  margin-bottom: 25px;
+}
+#journalsBooksDetails .journalsBooksDetails-tittle h4 {
+  font-size: 20px;
+  color: var(--text-title-color);
+  line-height: 26px;
+  font-weight: 500;
+}
+#journalsBooksDetails .journalsBooksDetails-tittle p {
+  color: #666666;
+  font-size: 15px;
+  font-weight: normal;
+}
+#journalsBooksDetails .journalsBooksDetails-Header {
+  margin-top: 15px;
+}
+#journalsBooksDetails .journalsBooksDetails-Header-image img {
+  border: 2px solid #eeeeee;
+  padding: 5px;
+}
+#journalsBooksDetails .journalsBooksDetails-Header-text {
+  margin-top: 13px;
+}
+#journalsBooksDetails .journalsBooksDetails-Header-text .author {
+  margin-bottom: 20px;
+}
+#journalsBooksDetails .journalsBooksDetails-Header-text .author h4 {
+  font-size: 19px;
+  color: var(--text-title-color);
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+#journalsBooksDetails .journalsBooksDetails-Header-text .author p {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #666666;
+}
+
+#journalsBooksDetails .articleTable {
+  margin-top: 35px;
+}
+
+#journalsBooksDetails .articleTable-title {
+  border-bottom: 2px solid var(--color-primary);
+  margin-bottom: 20px;
+}
+#journalsBooksDetails .articleTable-title h3 {
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--text-title-color);
+  text-transform: uppercase;
+}
+
+#journalsBooksDetails .articleTable-table tr th {
+  padding: 12px 8px;
+  text-align: center;
+  font-weight: 600;
+}
+#journalsBooksDetails .articleTable-table th {
+  font-size: 13px;
+  vertical-align: middle !important;
+  line-height: 1.3 !important;
+  text-transform: uppercase;
+}
+
+#journalsBooksDetails .articleTable-table td {
+  padding: 12px 8px;
+  font-size: 14px;
+  vertical-align: middle !important;
+  line-height: 1.3 !important;
+}
+#journalsBooksDetails .articleTable-table tr td:nth-child(1) {
+  text-align: center;
+}
+#journalsBooksDetails .articleTable-table tr td:nth-child(2) {
+  text-align: left;
+}
+#journalsBooksDetails .articleTable-table tr td:nth-child(3) {
+  text-align: center;
+}
+#journalsBooksDetails .articleTable-table .download {
+  background: #00a22126;
+  color: var(--color-primary);
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: 500;
+}
+/*! ********   Site Index -   ********** */
+/*--------------------------------------------------------------
+#  Site Index
+--------------------------------------------------------------*/
+#AlphabetLetter .AlphabetLetter-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#AlphabetLetter .AlphabetLetter-items .Letter {
+  width: 40px;
+  height: 40px;
+  border: 1px solid#000;
+  background: #eee;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  cursor: pointer;
+}
+#AlphabetLetter .AlphabetLetter-items .Letter:hover {
+  background: var(--text-title-color);
+}
+#AlphabetLetter .AlphabetLetter-items .Letter:hover h4 a {
+  color: var(--color-inverse);
+}
+#AlphabetLetter .AlphabetLetter-items .Letter h4 {
+  line-height: 40px;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+#AlphabetLetter .AlphabetLetter-items .Letter h4 a {
+  color: var(--text-title-color);
+}
+#AlphabetLetter .AlphabetLetter-link {
+  margin-top: 20px;
+}
+#AlphabetLetter .AlphabetLetter-link h4 {
+  color: var(--text-title-color);
+  font-weight: 600;
+  border-bottom: 3px solid var(--text-title-color);
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+  text-align: left;
+  line-height: 1.4;
+  font-size: 22px;
+}
+#AlphabetLetter .AlphabetLetter-link ul {
+  list-style: none;
+  padding: 0;
+}
+#AlphabetLetter .AlphabetLetter-link ul li {
+  color: var(--text-title-color);
+  padding-bottom: 5px;
+}
+#AlphabetLetter .AlphabetLetter-link ul li a {
+  color: var(--text-title-color);
+  transition: all 0.4s;
+  font-size: 17px;
+}
+#AlphabetLetter .AlphabetLetter-link ul li a:hover {
+  color: var(--color-primary);
+}
+#AlphabetLetter .AlphabetLetter-show {
+  margin-top: 50px;
+}
+
+/*! ********   Site Maps -   ********** */
+/*--------------------------------------------------------------
+#  Site maps
+--------------------------------------------------------------*/
+#sitemaps .sitemaps-info {
+  width: 100%;
+  border-top: 3px solid #47e483;
+  border-bottom: 3px solid #47e483;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+#sitemaps .sitemaps-info h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#sitemaps .sitemaps-info h5 {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+#sitemaps .sitemaps-info .sitemap-title {
+  padding-bottom: 10px;
+}
+#sitemaps .sitemaps-info .sitemap-title h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+#sitemaps .sitemaps-info .sitemap-title h4 a {
+  color: var(--text-title-color);
+}
+#sitemaps .sitemaps-info .sitemap-title h4 a:hover {
+  color: var(--color-primary);
+}
+#sitemaps .sitemaps-info .sitemap-title ul li {
+  list-style: none;
+  margin-top: 3px;
+}
+#sitemaps .sitemaps-info .sitemap-title ul li a {
+  color: var(--text-title-color);
+}
+#sitemaps .sitemaps-info .sitemap-title ul li a:hover {
+  color: var(--color-primary);
+}
+#sitemaps .sitemaps-info .sitemap-title ul li a i {
+  color: var(--color-primary);
+}
+#sitemaps .sitemaps-info .sitemap-second {
+  font-weight: 600;
+  font-size: 17px;
 }

@@ -37,7 +37,7 @@ include '_rheader.php';
           <div class="row">
             <div class="col-lg-4">
               <div class="faculty-detail">
-                <div class="card faculty-detail-card">
+                <div class="faculty-detail-card">
                   <img
                     src="../assets/img/team/Faclty04.jpg"
                     class="card-img-top img-fluid"

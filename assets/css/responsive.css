@@ -3,17 +3,509 @@
   .pc-logo {
     display: none;
   }
+
   .notice-container {
     margin-top: 30px;
   }
+
   .notices-card {
     overflow-x: scroll;
   }
+
   .section-title h2 {
-    font-size: 25px;
+    font-size: 20px;
   }
-   #message-vice .Vice-message a {
+
+  #message-vice .Vice-message a {
     height: auto;
+  }
+
+  #topbar .government-logo {
+    text-align: center;
+  }
+
+  #topbar .government-logo img {
+    height: 100px;
+    display: none;
+  }
+
+  #topbar .home-logo img {
+    height: 70px;
+    margin: 0 auto;
+  }
+
+  #topbar .university-name h2 {
+    font-size: 16px;
+  }
+
+  #topbar .university-name h3 {
+    font-size: 16px;
+  }
+
+  #message-vice .Vice-message-info h4 {
+    font-size: 16px;
+  }
+
+  .stats .stats-icons {
+    width: 55px;
+    height: 55px;
+  }
+
+  .stats .stats-item span {
+    font-size: 42px;
+  }
+
+  /* over view page */
+  .Mission .Mission-top-title h2 {
+    font-size: 22px;
+  }
+
+  .breadcrumbs h2 {
+    font-size: 30px;
+  }
+
+  .breadcrumbs ol {
+    font-size: 12px;
+  }
+
+  .library-search .library-catalog h5 {
+    font-size: 14px;
+  }
+
+  .library-hours h3 {
+    padding-top: 15px;
+    font-size: 22px;
+    color: var(--text-title-color);
+  }
+
+  #E-books .library-icons h4 {
+    margin-bottom: 20px;
+  }
+
+  .moblie-logo span {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-title-color);
+  }
+
+  #hero {
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+  }
+
+  #hero .carousel-content h2 {
+    margin-bottom: 15px;
+    font-size: 21px;
+  }
+
+  #hero .carousel-content p {
+    font-size: 13px;
+  }
+
+  #home-hero .home-hero-news .home-news-content h4 {
+    font-size: 14px;
+  }
+
+  #home-hero .home-hero-notice .home-notice-content h4 {
+    font-size: 14px;
+  }
+
+  .INSTITUTES-single .INSTITUTES-items a {
+    font-size: 14px;
+  }
+
+  .FACULTIES-single .faculties-items a {
+    font-size: 14px;
+  }
+
+  .event-info .event-text h4 {
+    font-size: 15px;
+  }
+
+  .notice-nav-btn {
+    font-size: 12px;
+  }
+
+  .notices-card .notice-item h5 a {
+    font-size: 14px;
+  }
+
+  .notices-card .notice-item p {
+    font-size: 14px;
+  }
+
+  .research-info h4 {
+    font-size: 16px;
+  }
+
+  .activities-info h4 {
+    font-size: 16px;
+  }
+
+  .stats .stats-item {
+    padding: 25px 15px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: start;
+    padding-left: 30px;
+  }
+
+  #Institutional-meb .Institutional-single-items p {
+    font-size: 15px;
+  }
+
+  #Goals .Goals-single-items p {
+    font-size: 14px;
+  }
+
+  .glance .accordion-list p {
+    font-size: 14px;
+  }
+
+  #organogram .organogram-info h4 {
+    font-size: 16px;
+  }
+
+  #campus-map .campus-info h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  #academicCalendar .academicCalendar-tittle h4 {
+    font-size: 16px;
+  }
+
+  #academicCalendar .academic-department-name {
+    font-size: 16px;
+  }
+
+  #library-about .library-about-message h4 {
+    font-size: 16px;
+  }
+
+  .common-search-box #search-form .search-button {
+    font-size: 12px;
+  }
+
+  .library-search .library-catalog h4 {
+    font-size: 17px;
+  }
+
+  .library-hours h3 {
+    font-size: 20px;
+  }
+
+  #topbar .logo-info h3 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+
+  #message .vice-message-info h4 {
+    font-size: 16px;
+  }
+
+  #message .vice-message-info p {
+    font-size: 14px;
+  }
+
+  #message .vice-message-info h5 {
+    font-size: 18px;
+  }
+
+  #message .vice-message-info h6 {
+    font-size: 13px;
+  }
+
+  #profile .profile-info .profile-education h4 {
+    font-size: 17px;
+  }
+
+  #Department-top-heading .Department-top-heading-title h4 {
+    font-size: 20px;
+  }
+
+  #Msg-dep-Head .welcome-message h4 {
+    font-size: 16px;
+  }
+
+  #Msg-dep-Head .welcome-message h2 {
+    font-size: 17px;
+  }
+
+  .message-dep-head {
+    padding-top: 20px;
+  }
+
+  #Msg-dep-Head .DEPARTMENT-card-body p {
+    font-size: 14px;
+  }
+
+  #about-department .welcome-message h4 {
+    font-size: 16px;
+  }
+
+  #about-department .welcome-message h2 {
+    font-size: 17px;
+  }
+
+  /* Department page */
+
+  #dpNotice .dpNotice-nav-btn {
+    color: var(--text-title-color);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 11px;
+  }
+
+  #dpNotice .dpNotice-card .dpNotice-item h5 a {
+    font-size: 14px;
+  }
+
+  #dpNotice .dpNotice-card .dpNotice-item p {
+    font-size: 13px;
+  }
+
+  #latestEvent .latestEvent-news .latestEvent-content span {
+    font-size: 12px;
+  }
+
+  #latestEvent .latestEvent-news .latestEvent-content h4 a {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  #latestEvent .latestEvent-news .latestEvent-content p {
+    font-size: 13px;
+  }
+
+  #latestEvent .latestEvent-news {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 90px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  #latestEvent .latestEvent-news .latestEvent-content {
+    flex-grow: 1;
+    padding-left: 15px;
+  }
+
+  #latestEvent .latestEvent-news .latestEvent-image img {
+    border-radius: 100%;
+    max-width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+
+  #latestEvent .latestEvent-news .latestEvent-content .event-more-btn {
+    color: #002147;
+    font-size: 12px;
+    font-weight: 600;
+    border: 2px solid #002147;
+    border-radius: 30px;
+    padding: 2px 16px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+  }
+
+  #latest-news .latest-news-card-content h5 {
+    font-size: 15px;
+  }
+
+  #latest-news .latest-news-card-content p {
+    line-height: 23px;
+    font-size: 14px;
+  }
+
+  #latest-news .latest-news-card-bottom .data span {
+    font-size: 14px;
+  }
+
+  #notableAlumni .notAlumni-items span a {
+    font-size: 16px;
+  }
+
+  #notableAlumni .notAlumni-items h4 {
+    font-size: 14px;
+  }
+
+  #RSCAbout .Research-message-info h4 {
+    font-size: 18px;
+  }
+
+  .journalsBooks-content {
+    padding-top: 20px;
+  }
+
+  #journalsBooks .journalsBooks-items .journalsBooks-date p {
+    font-size: 13px;
+  }
+
+  #journalsBooks .journalsBooks-items .journalsBooks-content h4 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-top: 6px;
+    color: var(--text-title-color);
+  }
+
+  #journalsBooksDetails .journalsBooksDetails-tittle h4 {
+    font-size: 18px;
+  }
+
+  #journalsBooksDetails .journalsBooksDetails-tittle p {
+    font-size: 14px;
+  }
+
+  #journalsBooksDetails .journalsBooksDetails-Header-text .author h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  #journalsBooksDetails .articleTable-title h3 {
+    font-size: 19px;
+  }
+
+  #latest-news .latest-news-container h4 {
+    font-size: 15px;
+  }
+
+  #latest-news .latest-news-container .lest-news-info p {
+    text-align: justify;
+    color: #666;
+    font-size: 14px;
+  }
+
+  .middle-header-logo img {
+    width: 65px;
+  }
+
+  .middle-header-logo h2 {
+    font-size: 11px;
+  }
+
+  .main-header ul li a {
+    color: #fff;
+    padding: 10px 0 10px 10px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .main-header ul li {
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 14px;
+  }
+
+  .apa-section-title h4 {
+    font-size: 19px;
+  }
+
+  .apa-items a h4 {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+  }
+
+  .apa-card-body ul li a {
+    color: var(--text-title-color);
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: 14px;
+  }
+
+  #alumniDetails .alumni-Bio {
+    border-top: 3px solid #47e483;
+    border-bottom: 3px solid #47e483;
+    padding: 20px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+
+  #alumniDetails .alumni-Bio .alumni-shot-Biography h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-title-color);
+    margin-bottom: 13px;
+  }
+
+  #alumniDetails .alumni-Bio p {
+    text-align: justify;
+    font-size: 14px;
+    color: #333333;
+    line-height: 26px;
+  }
+
+  #alumniDetails .alumniImage-items .alumniImage h6 {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  #alumniDetails .alumniImage-items .alumniImage h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-title-color);
+    margin-bottom: 12px;
+    margin-top: 16px;
+  }
+  #facultyDetails .faculty-Biography {
+    width: 100%;
+    border-top: 3px solid #47e483;
+    border-bottom: 3px solid #47e483;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    margin-top: 20px;
+  }
+  .facultyExperience .facultyExperience-title h3 {
+    font-size: 20px;
+  }
+  .facultyExperience .nav-link {
+    border: 0;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-title-color);
+    transition: 0s;
+    cursor: pointer;
+    height: 100%;
+    background: #f1f1f1;
+    border-radius: 0;
+  }
+  .facultyExperience .nav-link h4 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: var(--text-title-color);
+  }
+  .facultyExperience .nav-item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .footer-text h5 {
+    margin-bottom: 0;
+    color: #fff;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 14px;
   }
 }
 
@@ -22,17 +514,29 @@
   .pc-logo {
     display: none;
   }
+
   .notice-container {
     margin-top: 30px;
   }
+
   .notices-card {
     overflow-x: scroll;
   }
+
   .section-title h2 {
-    font-size: 26px;
+    font-size: 23px;
   }
-   #message-vice .Vice-message a {
+
+  #message-vice .Vice-message a {
     height: auto;
+  }
+
+  .library-search .library-catalog h5 {
+    font-size: 14px;
+  }
+
+  .library-hours {
+    margin-top: 15px;
   }
 }
 
@@ -41,6 +545,7 @@
   .pc-logo {
     display: none;
   }
+
   .navbar a,
   .navbar a:focus {
     display: flex;
@@ -54,12 +559,15 @@
     text-transform: uppercase;
     transition: 0.3s;
   }
+
   .notice-container {
     margin-top: 30px;
   }
+
   .notices-card {
     overflow-x: scroll;
   }
+
   #message-vice .Vice-message a {
     height: auto;
   }
@@ -70,6 +578,7 @@
   .moblie-logo {
     display: none;
   }
+
   .navbar a,
   .navbar a:focus {
     display: flex;
@@ -83,7 +592,8 @@
     text-transform: uppercase;
     transition: 0.3s;
   }
-   #message-vice .Vice-message a {
+
+  #message-vice .Vice-message a {
     height: auto;
   }
 }

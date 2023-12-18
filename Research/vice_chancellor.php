@@ -7,7 +7,7 @@ include '_rhead.php';
 <body>
 
   <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="fixed-top d-flex align-items-center">
+  <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="logo-info d-flex align-items-center">
         <div>
@@ -28,7 +28,7 @@ include '_rhead.php';
   </section>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
+  <header id="header" class=" d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
       <!-- <div class="logo">
           <h1>

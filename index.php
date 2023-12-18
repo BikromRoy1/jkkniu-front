@@ -11,10 +11,10 @@ include '_head.php';
   ?>
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
+  <!-- <section id="hero">
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner" role="listbox">
-        <!-- Slide 1 -->
+       
         <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-4.png)">
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
@@ -30,7 +30,7 @@ include '_head.php';
             </div>
           </div>
         </div>
-        <!-- Slide 2 -->
+        
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
@@ -45,7 +45,7 @@ include '_head.php';
           </div>
         </div>
 
-        <!-- Slide 3 -->
+        
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
           <div class="carousel-container">
             <div class="carousel-content animate__animated animate__fadeInUp">
@@ -71,8 +71,308 @@ include '_head.php';
 
       <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
     </div>
-  </section>
+  </section> -->
   <!-- End Hero -->
+
+
+
+  <div class="container-fluid" id="home-hero">
+    <div class="row g-0">
+      <div class="col-lg-9">
+        <section id="hero">
+          <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+
+              <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-4.png)">
+                <div class="carousel-container">
+                  <div class="carousel-content animate__animated animate__fadeInUp">
+                    <h2>
+                      Welcome to the
+                      <span>Jatiya Kabi Kazi Nazrul Islam University</span>
+                    </h2>
+                    <p>
+                      Jatiya Kabi Kazi Nazrul Islam University was established by
+                      the Government of Bangladesh on 09 May 2006, though the
+                      initiative for its establishment was taken some years before..
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
+                <div class="carousel-container">
+                  <div class="carousel-content animate__animated animate__fadeInUp">
+                    <h2>VISIT OUR CAMPUS LIFE.</h2>
+                    <p>
+                      The university has a duly qualified and productive band of
+                      youthful faculty members and officers/staffs who are deeply
+                      committed to the university's mission to produce world class
+                      graduates in academic disciplines of arts,
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
+                <div class="carousel-container">
+                  <div class="carousel-content animate__animated animate__fadeInUp">
+                    <h2>Students' Celebrating their Graduation Moment</h2>
+                    <p>
+                      Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
+                      et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
+                      mollitia ut. Similique ea voluptatem. Esse doloremque
+                      accusamus repellendus deleniti vel. Minus et tempore modi
+                      architecto.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
+
+            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+          </div>
+        </section>
+      </div>
+      <div class="col-lg-3">
+        <div class="left-slide-notice">
+          <div class="slide-notice-padding">
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-3">
+              <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">News & Event</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#tab2">Notice Board</a></li>
+            </ul><!-- End Tabs -->
+            <!-- Tab Content -->
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="tab1">
+
+                <div>
+
+
+                  <marquee behavior="scroll" height='500' direction="up" onmouseover="this.stop()" onmouseout="this.start()">
+                    <!-- items 01 -->
+                    <div class="home-hero-news">
+                      <div class="home-news-date">
+                        <div>
+                          <h4>10</h4>
+                          <span> Jun, 2023 </span>
+                        </div>
+                      </div>
+                      <div class="home-news-content">
+                        <h4><a href="#">
+                            Commemoration of 12 June 1897 Great Indian
+                            Earthquake: Towards Preparedness and
+                          </a></h4>
+                      </div>
+                    </div>
+                    <!-- End item 01 -->
+
+
+                    <!-- items 02 -->
+                    <div class="home-hero-news">
+                      <div class="home-news-date">
+                        <div>
+                          <h4>25</h4>
+                          <span> AUG, 2023 </span>
+                        </div>
+                      </div>
+                      <div class="home-news-content">
+                        <h4><a href="#">
+                            Commemoration of 12 June 1897 Great Indian
+                            Earthquake: Towards Preparedness and
+                          </a></h4>
+                      </div>
+                    </div>
+                    <!-- End item 02 -->
+
+
+                    <!-- items 03 -->
+                    <div class="home-hero-news">
+                      <div class="home-news-date">
+                        <div>
+                          <h4>19</h4>
+                          <span> Jun, 2023 </span>
+                        </div>
+                      </div>
+                      <div class="home-news-content">
+                        <h4><a href="#">
+                            Commemoration of 12 June 1897 Great Indian
+                            Earthquake: Towards Preparedness and
+                          </a></h4>
+                      </div>
+                    </div>
+                    <!-- End item 03 -->
+
+
+                    <!-- items 04 -->
+                    <div class="home-hero-news">
+                      <div class="home-news-date">
+                        <div>
+                          <h4>10</h4>
+                          <span> Jun, 2023 </span>
+                        </div>
+                      </div>
+                      <div class="home-news-content">
+                        <h4><a href="#">
+                            Commemoration of 12 June 1897 Great Indian
+                            Earthquake: Towards Preparedness and
+                          </a></h4>
+                      </div>
+                    </div>
+                    <!-- End item 04 -->
+
+                    <!-- items 05 -->
+                    <div class="home-hero-news">
+                      <div class="home-news-date">
+                        <div>
+                          <h4>10</h4>
+                          <span> Jun, 2023 </span>
+                        </div>
+                      </div>
+                      <div class="home-news-content">
+                        <h4><a href="#">
+                            Commemoration of 12 June 1897 Great Indian
+                            Earthquake: Towards Preparedness and
+                          </a></h4>
+                      </div>
+                    </div>
+                    <!-- End item 05 -->
+                    <!-- items 06 -->
+                    <div class="home-hero-news">
+                      <div class="home-news-date">
+                        <div>
+                          <h4>10</h4>
+                          <span> Jun, 2023 </span>
+                        </div>
+                      </div>
+                      <div class="home-news-content">
+                        <h4><a href="#">
+                            Commemoration of 12 June 1897 Great Indian
+                            Earthquake: Towards Preparedness and
+                          </a></h4>
+                      </div>
+                    </div>
+                    <!-- End item 06 -->
+                    <!-- items 07 -->
+                    <div class="home-hero-news">
+                      <div class="home-news-date">
+                        <div>
+                          <h4>10</h4>
+                          <span> Jun, 2023 </span>
+                        </div>
+                      </div>
+                      <div class="home-news-content">
+                        <h4><a href="#">
+                            Commemoration of 12 June 1897 Great Indian
+                            Earthquake: Towards Preparedness and
+                          </a></h4>
+                      </div>
+                    </div>
+                    <!-- End item 07 -->
+
+                  </marquee>
+
+                </div>
+
+                <div class="home-news-btn">
+                  <a href="#">View All News <i class="ri-arrow-right-double-line"></i></a>
+                </div>
+
+
+
+              </div><!-- End Tab 1 Content -->
+
+              <div class="tab-pane fade show" id="tab2">
+
+
+
+                <div>
+
+                  <marquee behavior="scroll" loop='true' height='500' direction="up" onmouseover="this.stop()" onmouseout="this.start()">
+
+                    <!-- items 01 -->
+                    <div class="home-hero-notice">
+                      <div class="home-notice-icons">
+                        <i class="bi bi-pencil-square"></i>
+                      </div>
+                      <div class="home-notice-content">
+                        <h4><a href="#">Admission Announcement 10th Batch, 2023 Executive Masters of Public Administration (EMPA)</a></h4>
+                      </div>
+                    </div>
+                    <!-- End items 01 -->
+
+                    <!-- items 02 -->
+                    <div class="home-hero-notice">
+                      <div class="home-notice-icons">
+                        <i class="bi bi-pencil-square"></i>
+                      </div>
+                      <div class="home-notice-content">
+                        <h4><a href="#">Admission Announcement 10th Batch, 2023 Executive Masters of Public Administration (EMPA)</a></h4>
+                      </div>
+                    </div>
+                    <!-- End items 02 -->
+                    <!-- items 03 -->
+                    <div class="home-hero-notice">
+                      <div class="home-notice-icons">
+                        <i class="bi bi-pencil-square"></i>
+                      </div>
+                      <div class="home-notice-content">
+                        <h4><a href="#">Admission Announcement 10th Batch, 2023 Executive Masters of Public Administration (EMPA)</a></h4>
+                      </div>
+                    </div>
+                    <!-- End items 03 -->
+                    <!-- items 04 -->
+                    <div class="home-hero-notice">
+                      <div class="home-notice-icons">
+                        <i class="bi bi-pencil-square"></i>
+                      </div>
+                      <div class="home-notice-content">
+                        <h4><a href="#">Admission Announcement 10th Batch, 2023 Executive Masters of Public Administration (EMPA)</a></h4>
+                      </div>
+                    </div>
+                    <!-- End items 04 -->
+                    <!-- items 05 -->
+                    <div class="home-hero-notice">
+                      <div class="home-notice-icons">
+                        <i class="bi bi-pencil-square"></i>
+                      </div>
+                      <div class="home-notice-content">
+                        <h4><a href="#">জাতীয় কবি কাজী নজরুল ইসলাম বিশ্ববিদ্যালয় এর ১ম বার্ষিক প্রতিবেদন প্রকাশিত</a></h4>
+                      </div>
+                    </div>
+                    <!-- End items 05 -->
+                  </marquee>
+
+
+
+                </div>
+
+
+                <div class="home-news-btn">
+                  <a href="#">View All Notice <i class="ri-arrow-right-double-line"></i></a>
+                </div>
+
+              </div><!-- End Tab 2 Content -->
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   <main id="main">
     <!-- Message from the Vice Chancellor - Home Page -->

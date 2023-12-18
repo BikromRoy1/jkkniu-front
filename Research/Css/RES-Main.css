@@ -206,7 +206,6 @@ section {
   position: relative;
   background-size: cover;
   background-position: center;
-  margin-top: 155px;
   background-repeat: no-repeat;
 }
 .breadcrumbs:before {
@@ -220,6 +219,7 @@ section {
   font-weight: 600;
   color: #fff;
   font-family: var(--font-secondary);
+  text-align: center;
 }
 .breadcrumbs ol {
   display: flex;
@@ -295,10 +295,26 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Department Top Tittle 
+--------------------------------------------------------------*/
+#Department-top-heading {
+  background: #4caf50;
+  padding: 16px 0px;
+}
+#Department-top-heading .Department-top-heading-title {
+  text-align: center;
+}
+#Department-top-heading .Department-top-heading-title h4 {
+  margin-bottom: 0px;
+  color: white;
+  font-size: 28px;
+  text-shadow: 2px 3px 6px #000;
+  font-weight: 500;
+}
+/*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  /* background: var(--text-title-color); */
   background: #00472a;
   border-top: 2px solid #1bbd36;
   font-size: 14px;
@@ -308,9 +324,6 @@ section {
   overflow: hidden;
   z-index: 996;
   padding: 15px 0;
-}
-#topbar.topbar-scrolled {
-  top: -44px;
 }
 #topbar .logo-info img {
   width: 55px;
@@ -335,12 +348,13 @@ section {
   z-index: 997;
   transition: all 0.5s;
   background: #fff;
-  top: 75px;
 }
-#header.header-scrolled {
+#header.fixed-top {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  top: 0;
 }
+/* .scrolled-offset {
+  margin-top: 70px;
+} */
 #header .logo h1 {
   font-size: 28px;
   margin: 0;
@@ -364,6 +378,21 @@ section {
   padding: 0;
   margin: 0;
   max-height: 40px;
+}
+.moblie-logo a img {
+  height: 48px;
+}
+.moblie-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.only-mobile{
+  display: none;
+}
+.moblie-logo span {
+  font-size: 11px;
+  font-weight: 600;
 }
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -578,7 +607,6 @@ section {
   padding: 0;
   position: relative;
   background-color: #002f50;
-  margin-top: 150px;
   overflow: hidden;
 }
 #hero .carousel-item {
@@ -614,7 +642,6 @@ section {
 }
 #hero h2 {
   color: #fff;
-  /* margin-bottom: 30px; */
   font-size: 48px;
   font-weight: 600;
   width: 80%;
@@ -668,15 +695,15 @@ section {
 
 @media (max-width: 768px) {
   #hero {
-    height: 90vh;
+    height: 60vh;
   }
 
   #hero .carousel-item {
-    height: 90vh;
+    height: 60vh;
   }
 
   #hero h2 {
-    font-size: 28px;
+    font-size: 23px;
   }
 }
 
@@ -693,11 +720,11 @@ section {
 
 @media (max-height: 500px) {
   #hero {
-    height: 150vh;
+    height: 100vh;
   }
 
   #hero .carousel-item {
-    height: 150vh;
+    height: 100vh;
   }
 }
 
@@ -1296,6 +1323,7 @@ section {
 #Msg-dep-Head .message-dep-head p {
   text-align: justify;
   color: #333333;
+  line-height: 26px;
 }
 #Msg-dep-Head .DEPARTMENT-card {
   border: 1px solid #eef0ef;
@@ -1361,6 +1389,7 @@ section {
 #about-department .about-department-content p {
   text-align: justify;
   color: #333333;
+  line-height: 26px;
 }
 #about-department .about-department-content .read-more {
   background-color: transparent;
@@ -2374,7 +2403,7 @@ section {
 }
 .common-search-box #search-form {
   height: 40px;
-  background: #F6F7F9;
+  background: #f6f7f9;
   display: flex;
   align-items: center;
   border-radius: 5px;
@@ -2458,7 +2487,7 @@ section {
 .library-hours p {
   margin-bottom: 0px;
 }
-#E-books .library-icons{
+#E-books .library-icons {
   margin-bottom: 10px;
 }
 #E-books .library-icons h4 {
@@ -2487,7 +2516,7 @@ section {
   margin-bottom: 14px;
   text-transform: uppercase;
 }
-#E-books .card-books .books-content h4 a{
+#E-books .card-books .books-content h4 a {
   color: var(--text-title-color);
 }
 #E-books .card-books .books-content .visit-btn {
@@ -2497,12 +2526,11 @@ section {
   color: var(--color-inverse);
   padding: 5px 13px;
   border-radius: 6px;
-
 }
 /*--------------------------------------------------------------
 #  Center library About us css 
 --------------------------------------------------------------*/
-#library-about{
+#library-about {
   background: #f1f7fd;
 }
 
@@ -2532,4 +2560,63 @@ section {
   font-weight: 400;
   font-size: 16px;
   margin-top: 15px;
+}
+/*--------------------------------------------------------------
+#  Alumni Details css 
+--------------------------------------------------------------*/
+#alumniDetails .alumniImage {
+  border-top: 3px solid #47e483;
+  border-bottom: 3px solid #47e483;
+  padding: 15px 15px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+#alumniDetails .alumni-Bio {
+  border-top: 3px solid #47e483;
+  border-bottom: 3px solid #47e483;
+  padding: 20px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+#alumniDetails .alumniImage-items .alumniImage {
+  text-align: center;
+}
+#alumniDetails .alumniImage-items .alumniImage img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border: 5px solid #ececec;
+  border-radius: 100px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+#alumniDetails .alumniImage-items .alumniImage h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-title-color);
+  margin-bottom: 12px;
+  margin-top: 16px;
+}
+#alumniDetails .alumniImage-items .alumniImage h6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+#alumniDetails .alumni-Bio .alumni-shot-Biography h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-title-color);
+  margin-bottom: 13px;
+}
+#alumniDetails .alumni-Bio p {
+  text-align: justify;
+  font-size: 16px;
+  color: #333333;
+  line-height: 26px;
+}
+#alumniDetails .alumni-Bio p:last-child {
+  margin-bottom: 0px;
 }
